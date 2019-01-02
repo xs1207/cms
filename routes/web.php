@@ -19,4 +19,11 @@ Route::get('/user',function(){
 });
 Route::get('/order',"Order\indexController@detail");
 
-Route::get('/show/{id}','Vip\User@index');
+//Route::get('/show/{id}','Vip\User@index');
+//增  删  改 查
+Route::get('/user/add','Vip\User@add');
+Route::get('/user/del/{id}','Vip\User@del');
+Route::get('/user/update/{id}','Vip\User@update');
+Route::get('/user/select','Vip\User@select');
+Route::get('/user/list','Vip\User@list');
+
